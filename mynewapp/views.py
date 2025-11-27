@@ -14,7 +14,7 @@ from rest_framework.views import APIView
 @api_view(['GET'])
 @permission_classes([AllowAny])
 def public_view(request):
-    return Response({"message": "This is public — no JWT something changed"})
+    return Response({"message": "This is public — no JWT something we have changed"})
 
 # 2) Class-based view protected with JWT
 from rest_framework_simplejwt.authentication import JWTAuthentication
